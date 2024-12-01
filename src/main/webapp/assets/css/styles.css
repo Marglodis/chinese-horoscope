@@ -1,0 +1,111 @@
+/* Estilos para la barra de navegación */
+.navbar-custom {
+	background-color: #e60012;
+	color: white;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+	color: white;
+}
+
+.navbar-custom .nav-link:hover {
+	color: #f1c40f;
+}
+
+.navbar-custom .logout-btn {
+	color: white;
+	border: 1px solid white;
+}
+
+.navbar-custom .logout-btn:hover {
+	background-color: #f1c40f;
+	border-color: #f1c40f;
+}
+
+.navbar-custom .icon {
+	width: 25px;
+	height: 25px;
+}
+
+body {
+	background-image: url('assets/img/bg-dragon.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* Contenedor para el formulario */
+.form-container {
+	margin-top: 50px;
+	max-width: 400px;
+	/* Reducción del ancho del formulario */
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.form-control {
+	height: 45px;
+	font-size: 16px;
+}
+
+.btn-block {
+	padding: 12px;
+	font-size: 18px;
+}
+
+.alert {
+	font-size: 14px;
+}
+
+.text-center a {
+	font-weight: bold;
+	color: #d9534f;
+}
+
+.text-center a:hover {
+	text-decoration: underline;
+}
+
+/* Estilo para alinear los botones uno al lado del otro */
+.d-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.d-flex .btn {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.d-flex .btn:last-child {
+	margin-right: 0;
+	/* Elimina el margen derecho en el último botón */
+}
+
+.form-container {
+	margin-bottom: 200px;
+	/* Espacio para evitar que el footer tape el formulario */
+}
+
+footer {
+	position: relative;
+	/* Evitar el uso de 'fixed-bottom' */
+	margin-top: 20px;
+	/* Espacio para el contenido */
+}
+
+body {
+	padding-bottom: 0;
+	/* Asegurarte de no dejar espacio innecesario al fondo */
+}
