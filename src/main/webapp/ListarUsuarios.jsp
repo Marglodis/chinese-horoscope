@@ -8,12 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Listado de Usuarios</title>
 <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
 <body>
 	<%@ include file="Header.jsp"%>
 
-	<div class="container mt-4">
+	<div class="container mt-4"
+		style="height: calc(100vh - 280px); overflow-y: auto;">
 		<h2 class="text-center mb-4">Lista de Usuarios</h2>
 
 		<!-- Formulario de búsqueda -->
@@ -33,7 +36,9 @@
 		<c:if test="${empty usuarios}">
 			<c:if test="${not empty param.busqueda}">
 				<div class="alert alert-warning text-center">
-					<strong>No hay resultados para "<c:out value="${param.busqueda}" />".</strong>
+					<strong>No hay resultados para "<c:out
+							value="${param.busqueda}" />".
+					</strong>
 				</div>
 			</c:if>
 		</c:if>
@@ -69,9 +74,11 @@
 		<!-- Botón para volver a listar todos los usuarios -->
 		<div class="text-center mt-3">
 			<c:if test="${not empty param.busqueda}">
-				<a href="BuscarUsuariosServlet" class="btn btn-secondary">Volver a listar todos los usuarios</a>
+				<a href="BuscarUsuariosServlet" class="btn btn-secondary">Volver
+					a listar todos los usuarios</a>
 			</c:if>
-			<a href="Dashboard.jsp" class="btn btn-secondary">Volver al Dashboard</a>
+			<a href="Dashboard.jsp" class="btn btn-secondary">Volver al
+				Dashboard</a>
 		</div>
 	</div>
 
