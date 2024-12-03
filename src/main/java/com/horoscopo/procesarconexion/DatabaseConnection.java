@@ -18,9 +18,12 @@ public class DatabaseConnection {
 
     static {
     	Dotenv dotenv = Dotenv.load();
-    	String dbUrl = dotenv.get("DB_URL");
-        String dbUser = dotenv.get("DB_USER");
-        String dbPassword = dotenv.get("DB_PASSWORD");
+    	
+    	// SUSTITUIR POR VARIABLES LOCALES, PLEASE!!!
+    	
+    	String dbUrl = "DB_URL"; //dotenv.get("DB_URL");
+        String dbUser = "DB_USER";//dotenv.get("DB_USER");
+        String dbPassword = "DB_PASSWORD";//dotenv.get("DB_PASSWORD");
         
         System.out.println("URL de la base de datos: " + dbUrl);
         System.out.println("Usuario de la base de datos: " + dbUser);
